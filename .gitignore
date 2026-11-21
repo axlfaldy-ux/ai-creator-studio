@@ -1,0 +1,33 @@
+node_modules/
+dist/
+*.local
+.env*
+!.env.example
+!.env.*.example
+
+# Local package-manager credentials and auth configuration
+.npmrc
+.yarnrc.yml
+.pypirc
+.netrc
+
+# Private keys, certificates, and common cloud/service credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+credentials.json
+*credentials*.json
+*service-account*.json
+*firebase-adminsdk*.json
+*secrets*.json
+*secret*.json
+*token*.json
+*password*.json
+*.secret
+*.token
+*.password
+
+npm-debug.log*

@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: ai-creator-studio
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start:server
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: OPENAI_IMAGE_MODEL
+        value: gpt-image-2.5-flare
+      - key: OPENAI_API_KEY
+        sync: false
